@@ -5,17 +5,25 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RestController
 public class HelloController {
-    
-    @GetMapping("/addition/values")
+	
+	final static Logger logger = LoggerFactory.getLogger(HelloController.class);
+	
+   @GetMapping("/addition/values")
     @ResponseBody
     public static String addition(@RequestParam List<Double> numbers) {
-// loglar ekle
+    	
+	   logger.info("Addition");
+    	
     	Double result = BigDecimal.ZERO.doubleValue();
     	
     	for(Double i : numbers) {
@@ -30,6 +38,8 @@ public class HelloController {
     @ResponseBody
     public static String substraction(@RequestParam List<Double> numbers) {
     	
+ 	   logger.info("substraction");
+
     	Double result = numbers.get(0);
     	
     	for(Double i : numbers) {
@@ -45,7 +55,8 @@ public class HelloController {
     @GetMapping("/multiplication/values")
     @ResponseBody
     public static String multiplication(@RequestParam List<Double> numbers) {
-    	
+  	   logger.info("multiplication");
+
     	Double result = BigDecimal.ONE.doubleValue();
     	
     	for(Double i : numbers) {
@@ -59,7 +70,8 @@ public class HelloController {
     @GetMapping("/division/values")
     @ResponseBody
     public static String division(@RequestParam List<Double> numbers) {
-    	
+   	   logger.info("division");
+
     	Double result = numbers.get(0);
     	numbers = numbers.subList(1, numbers.size());
     	
