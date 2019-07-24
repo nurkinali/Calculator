@@ -1,4 +1,4 @@
-package hello;
+/*package hello;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
@@ -39,3 +39,4 @@ public class HelloControllerIT {
         assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
     }
 }
+*/

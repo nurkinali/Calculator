@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: test.java.TestCalculator
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.492 sec <<< FAILURE! - in test.java.TestCalculator
+addition(test.java.TestCalculator)  Time elapsed: 0.434 sec  <<< ERROR!
+javax.ws.rs.ProcessingException: Unable to invoke request
+	at test.java.TestCalculator.addition(TestCalculator.java:13)
+Caused by: java.net.ConnectException: Bağlantı reddedildi (Connection refused)
+	at test.java.TestCalculator.addition(TestCalculator.java:13)
+
+substraction(test.java.TestCalculator)  Time elapsed: 0.008 sec  <<< ERROR!
+javax.ws.rs.ProcessingException: Unable to invoke request
+	at test.java.TestCalculator.substraction(TestCalculator.java:18)
+Caused by: java.net.ConnectException: Bağlantı reddedildi (Connection refused)
+	at test.java.TestCalculator.substraction(TestCalculator.java:18)
+
+division(test.java.TestCalculator)  Time elapsed: 0.008 sec  <<< ERROR!
+javax.ws.rs.ProcessingException: Unable to invoke request
+	at test.java.TestCalculator.division(TestCalculator.java:28)
+Caused by: java.net.ConnectException: Bağlantı reddedildi (Connection refused)
+	at test.java.TestCalculator.division(TestCalculator.java:28)
+
+multiplication(test.java.TestCalculator)  Time elapsed: 0.008 sec  <<< ERROR!
+javax.ws.rs.ProcessingException: Unable to invoke request
+	at test.java.TestCalculator.multiplication(TestCalculator.java:23)
+Caused by: java.net.ConnectException: Bağlantı reddedildi (Connection refused)
+	at test.java.TestCalculator.multiplication(TestCalculator.java:23)
+
