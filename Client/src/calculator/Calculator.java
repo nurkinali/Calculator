@@ -34,6 +34,7 @@ public class Calculator extends JFrame implements ActionListener {
 					
 	public static void main(String[] args) {
 		
+		
 		Calculator c = new Calculator();
 		
 		frame = new JFrame("Calculator");
@@ -376,6 +377,7 @@ public class Calculator extends JFrame implements ActionListener {
 		}
 	}
 	public static String addition(String x, String y) {
+	    logger.info("toplama yapilan sayilar: {} {} ", x, y);		
 		return JerseyClient.calculate(JerseyClient.getWebTarget(), JerseyClient.ADDITION_VALUES, new BigDecimal(x), new BigDecimal(y));
 	  }
 	public static String substraction(String x, String y) {
