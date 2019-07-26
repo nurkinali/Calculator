@@ -64,9 +64,11 @@
         </dependency>
     </dependencies>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+	<properties>
+	    <java.version>1.8</java.version>
+	    <start-class>src.main.java.hello.Application</start-class>
+	</properties>
+	
 
     <build>
         <plugins>     
