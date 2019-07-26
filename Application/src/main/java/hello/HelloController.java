@@ -18,6 +18,18 @@ public class HelloController {
 	
 	final static Logger logger = LoggerFactory.getLogger(HelloController.class);
 	
+	@GetMapping("")
+	@ResponseBody
+	public static String bonjour() {
+		return "Bonjour World";
+	}
+
+	@GetMapping("/")
+	@ResponseBody
+	public static String hello() {
+		return "Hello World";
+	}
+	
    @GetMapping("/addition/values")
     @ResponseBody
     public static String addition(@RequestParam List<Double> numbers) {

@@ -1,1 +1,2 @@
-web: java -jar -Dserver.port=$PORT target/HerokuDemoProject-1.0.0.jar
+# Procfile
+web: java -jar target/gs-spring-boot-0.1.0.jar -Dserver.port=8080
