@@ -1,3 +1,3 @@
-Calculator
-
-basic operations such as addition, substraction, division, multiplication: curl, client, keyboard, mouse options.
+First Spring Boot Project - Calculator
+  Basic operations such as addition, substraction, division, multiplication
+  Curl, client, keyboard, mouse options
